@@ -129,12 +129,27 @@
 
 
 
-
-
 	<button1 style="text-align: center;">ANGEL</button1>
 	<button2 style="text-align: center;">OPTION</button2>
 	
-	
+	<form action="/upload" method="post" enctype="multipart/form-data">
+		<label for="pdf-file">Select a PDF file to upload:</label>
+		<input type="file" id="pdf-file" name="pdf-file" style="display:none;">
+		<button type="button" onclick="document.getElementById('pdf-file').click()">Upload</button>
+		<br><br>
+		<input type="submit" value="Submit">
+	  </form>
+	  
+
+
+
+
+
+
+
+
+
+
 	
 </body>
 </html>
