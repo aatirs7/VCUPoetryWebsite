@@ -129,22 +129,12 @@
 
 
 
-	<button1 style="text-align: center;">ANGEL</button1>
-	<button2 style="text-align: center;">OPTION</button2>
 	
-	<form action="/upload" method="post" enctype="multipart/form-data" id="pdf-form">
-		<label for="pdf-file">Add your poem here!</label>
-		<input type="file" id="pdf-file" name="pdf-file">
-	  </form>
-	  
-	  <script>
-		document.getElementById('pdf-file').addEventListener('change', function() {
-		  document.getElementById('pdf-form').submit();
-		});
-	  </script>
 	  
 
-
+	  <input type="file" id="poetry-upload" style="display:none;" />
+	  <button onclick="document.getElementById('poetry-upload').click();">Upload your poetry here!</button>
+	  
 
 
 
