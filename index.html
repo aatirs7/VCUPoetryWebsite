@@ -107,6 +107,26 @@
 			
     /* other styles here */
 }
+
+
+#back-btn {
+			display: block;
+			margin: 20px auto;
+			padding: 10px;
+			width: 220px;
+			font-size: 18px;
+			font-weight: bold;
+			color: #fff;
+			background-color: rgb(227, 153, 153);
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			position: absolute;
+ 			top: 170px;
+  			right: 10px;
+			
+    /* other styles here */
+}
 	</style>
 </head>
 <body>
@@ -118,7 +138,7 @@
 	
 
 	<button id="contact-btn">CONTACT</button>
-
+	<button id="back-btn">CONTACT</button>
 
 	<script>
 		var contactBtn = document.getElementById('contact-btn');
@@ -130,6 +150,19 @@
 
 
 	</script>
+
+
+
+<script>
+	var backBtn = document.getElementById('back-btn');
+	contactBtn.addEventListener('click', function() {
+		window.location.href = "index.html";
+	});
+
+
+
+
+</script>
 <button id="upload-btn">UPLOAD</button>
 
 
